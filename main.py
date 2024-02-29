@@ -42,6 +42,7 @@ morse_codes = {
 text_to_convert = input("What would you like to convert to morse code? : \n").lower()
 
 #Convert text to morse code
+
 def convert_text():
     converted_text = ''
     for letter in text_to_convert:
@@ -50,11 +51,10 @@ def convert_text():
             converted_text += morse_letter + ", "
         else:
             print(f"{letter} is an Invalid Character")
+
             
     print(converted_text)
     
 
 convert_text()
-  
-  
   

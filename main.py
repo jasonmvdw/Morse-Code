@@ -1,3 +1,4 @@
+#Initialise Morse Dictionary
 morse_codes = {
     "a" : "•⁃",
     "b" : "⁃•••",
@@ -37,11 +38,14 @@ morse_codes = {
     "0" : "⁃⁃⁃⁃⁃",   
 }
 
+#Get User Input to convert
 text_to_convert = input("What would you like to convert to morse code? : \n").lower()
+
+#Convert text to morse code
 
 converted_text = ''
 for letter in text_to_convert:
-    if letter in morse_codes:
+     if letter in morse_codes:
         morse_letter = morse_codes[letter]
         converted_text += morse_letter + ", "
     else:
@@ -49,9 +53,3 @@ for letter in text_to_convert:
             
 print(converted_text)
     
-
-  
-  
-  
-
-
